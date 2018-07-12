@@ -1,4 +1,4 @@
-language: c
+language: generic
 
 branches:
   only:
@@ -7,7 +7,7 @@ branches:
 notifications:
   email: false
 
-before_script:
+script:
   - flt=$(for f in imgs/*; do echo "'$f',"; done | sed -e 's/imgs\///g' | tr '\n' ' ')
   - fl=${flt%??}
   - sed "s/'___FILES___'/${fl}/g" js/init.template.js > js/init.js
