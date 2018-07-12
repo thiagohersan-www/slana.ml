@@ -23,59 +23,9 @@
         padding-bottom: 75%;
         margin-bottom: 10vw;
       }
-      .i0 {
-        background-image: url(i0.jpg);
-      }
-      .i1 {
-        background-image: url(i1.jpg);
-      }
-      .i2 {
-        background-image: url(i2.jpg);
-      }
-      .i3 {
-        background-image: url(i3.jpg);
-      }
-      .i4 {
-        background-image: url(i4.jpg);
-      }
-      .i5 {
-        background-image: url(i5.jpg);
-      }
-      .i6 {
-        background-image: url(i6.jpg);
-      }
-      .i7 {
-        background-image: url(i7.jpg);
-      }
-      .i8 {
-        background-image: url(i8.jpg);
-      }
     </style>
+    <script src="js/init.js"></script>
+    <script src="js/and-beyond.js"></script>
   </head>
-  <body class="the-body">
-    <div class="image i0"></div>
-    <div class="image i1"></div>
-    <div class="image i2"></div>
-    <div class="image i3"></div>
-    <div class="image i4"></div>
-    <div class="image i5"></div>
-    <div class="image i6"></div>
-    <div class="image i7"></div>
-    <div class="image i8"></div>
-  </body>
-  <script>
-    var pList = document.getElementsByClassName("the-body")[0];
-    var numProjects = pList.childNodes.length;
-
-    function appendProjects() {
-      if ((window.innerHeight + window.scrollY + 150) > document.body.offsetHeight) {
-        for(var i=0; i<numProjects; i++) {
-          pList.appendChild(pList.childNodes[i].cloneNode(true));
-        }
-      }
-    }
-
-    window.onscroll = appendProjects;
-    appendProjects();
-  </script>
+  <body class="the-body"></body>
 </html>
