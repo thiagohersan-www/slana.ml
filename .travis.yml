@@ -1,0 +1,22 @@
+language: generic
+
+branches:
+  only:
+  - master
+
+notifications:
+  email: false
+
+script:
+  - flt=$(for f in imgs/*; do echo "'$f',"; done | sed -e 's/imgs\///g' | tr '\n' ' ')
+  - fl=${flt%??}
+  - sed "s/'___FILES___'/${fl}/g" js/init.template.js > js/init.js
+
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  keep-history: true
+  on:
+    branch: master
+
