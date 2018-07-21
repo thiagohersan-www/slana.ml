@@ -1,7 +1,7 @@
 window.addEventListener('load', function() {
   var pList = document.getElementsByClassName('the-body')[0];
 
-  var fileNames = ['i0.jpg', 'i10.jpg', 'i1.jpg', 'i2.jpg', 'i3.jpg', 'i4.jpg', 'i5.jpg', 'i6.jpg', 'i7.jpg', 'i8.jpg', 'i9.jpg'];
+  var fileNames = ['i0.jpg', 'i10.jpg', 'i1.jpg', 'i2.jpg', 'i3.jpg', 'i4.jpg', 'i5.jpg', 'i6.jpg', 'i7.jpg', 'i8.jpg', 'i9.jpg', 'oratorio_20180720.jpg'];
 
   for(var i=0; i<fileNames.length; i++) {
     var img = document.createElement('div');
