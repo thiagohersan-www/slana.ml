@@ -6,7 +6,7 @@ window.addEventListener('load', function() {
   for(var i=0; i<fileNames.length; i++) {
     var img = document.createElement('div');
     img.classList.add('image');
-    img.style.backgroundImage = 'url(../imgs/' + fileNames[i]+ ')';
+    img.style.backgroundImage = 'url(./imgs/' + fileNames[i]+ ')';
     pList.appendChild(img);
   }
 });
